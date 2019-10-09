@@ -2,12 +2,13 @@ import React from 'react';
 import './App.css';
 import createReactClass from 'create-react-class';
 import V4 from 'node-uuid';
+import Textarea from './Textarea';
 
 const Test = createReactClass({
   getInitialState: function() {
     this.renderCount = 0;
     return {
-      reply: '',
+      reply: 'Initial reply',
       update: false
     };
   },
@@ -37,13 +38,15 @@ const Test = createReactClass({
         <div className="expensive-list">
           {expensiveViews}
         </div>
-        <textarea value={this.state.reply} onChange={this.onReplyChanged} />
+        <Textarea defaultValue={this.state.reply} onChange={this.onReplyChanged} />
+        <hr />
+        Reply {this.state.reply}
       </div>
     );
   },
   onReplyChanged: function(e) {
     this.setState({
-      reply: e.currentTarget.value
+      reply: e.value
     });
   }
 });
