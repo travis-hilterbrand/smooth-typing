@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "create-react-class": "^15.6.3",
+    "node-uuid": "^1.4.8",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"

@@ -1,3 +1,16 @@
 .App {
-  text-align: center;
+  min-width: 300px;
+  min-height: 300px;
+  padding: 20px;
+  background: #eee;
+  font-weight: 18px;
+}
+.expensive-list {
+  height: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+textarea {
+  width: 200px;
+  height: 120px;
 }
